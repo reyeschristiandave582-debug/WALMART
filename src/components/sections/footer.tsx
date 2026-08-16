@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
 
    {/* Copyright */}
-      <p className="text-[#182C54]/60 text-[10px] font-bold mb-4 tracking-tight italic">
+      <p className="text-[#ffffff]/60 text-[10px] font-bold mb-4 tracking-tight italic">
         © 2026 All rights reserved.
       </p>
       
