@@ -6,26 +6,26 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-background: #1174c0;
+  --color-background: #ffffff;
   --color-foreground: #182c54;
 
   --color-card: #e21634;
-  --color-card-foreground: #1174c0;
+  --color-card-foreground: #ffffff;
 
   --color-popover: #e21634;
-  --color-popover-foreground: #1174c0;
+  --color-popover-foreground: #ffffff;
 
   --color-primary: #0024cc;
-  --color-primary-foreground: #1174c0;
+  --color-primary-foreground: #ffffff;
 
   --color-secondary: #182c54;
-  --color-secondary-foreground: #1174c0;
+  --color-secondary-foreground: #ffffff;
 
   --color-muted: #f5f5f5;
   --color-muted-foreground: #737373;
 
   --color-accent: #9c1c26;
-  --color-accent-foreground: #1174c0;
+  --color-accent-foreground: #ffffff;
 
   --color-destructive: #ef4444;
   --color-destructive-foreground: #fafafa;
