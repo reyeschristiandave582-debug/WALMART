@@ -48,7 +48,7 @@ export default function CTAButton() {
         </div>
       </a>
 
-      <p className="mt-3 text-[#182C54]/60 text-[10px] sm:text-[11px] font-bold tracking-tight text-center italic">
+      <p className="mt-3 text-[#ffffff]/60 text-[10px] sm:text-[11px] font-bold tracking-tight text-center italic">
         (Instant approval - No purchase required)
       </p>
 
