@@ -52,7 +52,7 @@ export default function InstructionSteps() {
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -left-full group-hover/box:animate-shine pointer-events-none" />
 
         <div className="absolute -top-4 -right-4 w-32 h-32 bg-[#ffc220]/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#ffffff]/8 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#000001]/8 rounded-full blur-2xl pointer-events-none" />
 
         <div className="relative z-10 space-y-0 sm:space-y-1">
           {steps.map((step, index) => (
@@ -66,7 +66,7 @@ export default function InstructionSteps() {
               </div>
 
               <div className="flex-1 border-b border-[#ffc220]/5 pb-0 last:border-0">
-                <p className="text-[#ffffff] text-[13px] sm:text-[15px] font-semibold tracking-tight leading-tight py-1.5">
+                <p className="text-[#000001] text-[13px] sm:text-[15px] font-semibold tracking-tight leading-tight py-1.5">
                   {step.text}
                 </p>
               </div>
