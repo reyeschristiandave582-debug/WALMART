@@ -1,60 +1,46 @@
 "use client";
 
 import React from 'react';
-import { Star } from 'lucide-react';
 
 /**
- * CTAButton Component (Walmart Edition)
+ * Footer Component (Walmart Edition)
  * 
- * Primary CTA button incorporating the Costco layout structure, sizing, 
- * star glow effects, and micro-copy while using Walmart brand colors.
+ * Minimalist compliance footer featuring standard legal links 
+ * and copyright information matching the Costco layout.
  */
-export default function CTAButton() {
-  const url = "https://giftclick.org/aff_c?offer_id=1157&aff_id=200438&source=wa";
-
-  const handleClick = (e: React.MouseEvent) => {
-    // For Orchids preview environment
-    if (typeof window !== 'undefined' && window.parent) {
-      window.parent.postMessage({ type: "OPEN_EXTERNAL_URL", data: { url } }, "*");
-    }
-  };
-
+const Footer = () => {
   return (
-    <div className="relative z-10 w-full max-w-md mx-auto px-4 flex flex-col items-center mt-5 mb-2">
-      <a 
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={handleClick}
-        className="group relative w-full h-[52px] sm:h-[58px] bg-[#0053e2] hover:bg-[#0047c4] text-white rounded-full flex items-center justify-center gap-2 shadow-[0_10px_25px_rgba(0,83,226,0.4)] hover:shadow-[0_12px_30px_rgba(0,83,226,0.5)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] overflow-hidden no-underline border border-white/20 animate-pulse"
-      >
-        {/* Continuous Shine Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent -left-full group-hover:animate-shine pointer-events-none" />
+    <footer className="relative z-10 w-full max-w-[512px] mx-auto px-4 pt-0 pb-16 mt-6 text-center">
+      {/* Standard Legal & Compliance Links */}
+      <div className="flex items-center justify-center gap-2 sm:gap-3 text-[11px] font-medium text-gray-500 mb-3">
+        <a 
+          href="#privacy" 
+          className="hover:text-gray-900 transition-colors underline-offset-2 hover:underline"
+        >
+          Privacy Policy
+        </a>
+        <span className="text-gray-300">•</span>
+        <a 
+          href="#terms" 
+          className="hover:text-gray-900 transition-colors underline-offset-2 hover:underline"
+        >
+          Terms & Conditions
+        </a>
+        <span className="text-gray-300">•</span>
+        <a 
+          href="#contact" 
+          className="hover:text-gray-900 transition-colors underline-offset-2 hover:underline"
+        >
+          Contact Us
+        </a>
+      </div>
 
-        <div className="flex items-center justify-center gap-2.5 sm:gap-3 relative z-10">
-          <Star 
-            className="w-4 h-4 sm:w-4.5 sm:h-4.5 fill-[#FFC220] text-[#FFC220] flex-shrink-0" 
-            style={{ filter: 'drop-shadow(0 0 5px rgba(255,194,32,0.7))' }}
-          />
-
-          <span className="text-[14px] sm:text-[16px] font-black uppercase text-white tracking-[0.14em] drop-shadow-sm">
-            START REVIEW
-          </span>
-
-          <Star 
-            className="w-4 h-4 sm:w-4.5 sm:h-4.5 fill-[#FFC220] text-[#FFC220] flex-shrink-0" 
-            style={{ filter: 'drop-shadow(0 0 5px rgba(255,194,32,0.7))' }}
-          />
-        </div>
-      </a>
-
-      {/* Trust Micro-Copy */}
-      <p className="mt-2.5 text-gray-500 text-[10px] sm:text-[11px] font-medium tracking-tight text-center">
-        (No purchase required &bull; Eligibility and reward terms apply)
+      {/* Copyright Statement */}
+      <p className="text-gray-400 text-[10px] font-medium tracking-tight">
+        © 2026 All rights reserved.
       </p>
-
-      {/* Ambient Floor Glow */}
-      <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-4/5 h-6 bg-[#0053e2]/20 blur-xl -z-10 rounded-full pointer-events-none" />
-    </div>
+    </footer>
   );
-}
+};
+
+export default Footer;
