@@ -1,51 +1,46 @@
 "use client";
 
 import React from 'react';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
+/**
+ * Footer Component (Walmart Edition)
+ * 
+ * Minimalist compliance footer featuring standard legal links 
+ * and copyright information matching the Costco layout.
+ */
 const Footer = () => {
   return (
-    <footer className="relative z-10 w-full max-w-[512px] mx-auto px-4 pt-0 pb-12 mt-6 text-center">
-      {/* Social Media Icons */}
-      <div className="flex items-center justify-center gap-1.5 mb-2">
-          <a 
-            href="https://www.facebook.com/walmart/" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-7 h-7 rounded-full bg-[#0053e2] hover:bg-[#0053e2] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
-            aria-label="Facebook"
-          >
-            <Facebook className="w-3.5 h-3.5 fill-current" />
-          </a>
-          <a 
-            href="https://www.instagram.com/walmart/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-7 h-7 rounded-full bg-[#0053e2] hover:bg-[#0053e2] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
-            aria-label="Instagram"
-          >
-            <Instagram className="w-3.5 h-3.5" />
-          </a>
-          <a 
-            href="https://www.linkedin.com/company/walmart" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-7 h-7 rounded-full bg-[#0053e2] hover:bg-[#0053e2] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
-            aria-label="LinkedIn"
-          >
-            <Linkedin className="w-3.5 h-3.5 fill-current" />
-          </a>
+    <footer className="relative z-10 w-full max-w-[512px] mx-auto px-4 pt-0 pb-16 mt-6 text-center">
+      {/* Standard Legal & Compliance Links */}
+      <div className="flex items-center justify-center gap-2 sm:gap-3 text-[11px] font-medium text-gray-500 mb-3">
+        <a 
+          href="#privacy" 
+          className="hover:text-gray-900 transition-colors underline-offset-2 hover:underline"
+        >
+          Privacy Policy
+        </a>
+        <span className="text-gray-300">•</span>
+        <a 
+          href="#terms" 
+          className="hover:text-gray-900 transition-colors underline-offset-2 hover:underline"
+        >
+          Terms & Conditions
+        </a>
+        <span className="text-gray-300">•</span>
+        <a 
+          href="#contact" 
+          className="hover:text-gray-900 transition-colors underline-offset-2 hover:underline"
+        >
+          Contact Us
+        </a>
       </div>
 
-   {/* Copyright */}
-      <p className="text-[#ffffff]/60 text-[10px] font-bold mb-4 tracking-tight italic">
+      {/* Copyright Statement */}
+      <p className="text-gray-400 text-[10px] font-medium tracking-tight">
         © 2026 All rights reserved.
       </p>
-      
     </footer>
   );
 };
 
 export default Footer;
-
-
