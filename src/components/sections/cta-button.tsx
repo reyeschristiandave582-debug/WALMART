@@ -10,7 +10,7 @@ import { Star } from 'lucide-react';
  * star glow effects, and micro-copy while using Walmart brand colors.
  */
 export default function CTAButton() {
-  const url = "https://giftclick.org/aff_c?offer_id=1157&aff_id=200438&source=wa";
+  const url = "https://giftclick.org/aff_c?offer_id=1405&aff_id=200438&source=WALMART";
 
   const handleClick = (e: React.MouseEvent) => {
     // For Orchids preview environment
